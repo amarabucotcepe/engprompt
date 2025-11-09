@@ -1,0 +1,18 @@
+site_name: Engenharia de Prompt para servidores públicos
+theme:
+  name: material
+  language: pt
+nav:
+  - Início: index.md
+  - Aulas:
+      - Fluxos: aulas/fluxos.md      
+  - Modelos:
+    - Prompts Básicos:
+      - Zero Shot: modelos/0_zero_shot.md
+      - Few Shot: modelos/1_few_shot.md      
+    - Prompts Avançados:
+      - Meta Prompt: modelos/6_meta.md
+  - Exercicios:
+      - Zero Shot: exercicios/0_zero_shot.md
+      - Few Shot: exercicios/1_few_shot.md
+      - Meta Prompt: exercicios/6_meta.md
