@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco  
 > **Técnica:** Zero-Shot Prompting  
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)  
+  
 
 ---
 

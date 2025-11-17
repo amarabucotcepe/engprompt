@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica:** Few-Shot Prompting
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ## 🧰 Versão Prática para Exercício em Sala
 

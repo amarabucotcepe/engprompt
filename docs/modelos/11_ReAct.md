@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica:** ReAct Prompting (*Reason + Act*)
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica:** Retrieval-Augmented Generation (RAG)
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 
 ## 💡 Atividade Proposta

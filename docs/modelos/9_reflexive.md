@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica** Reflexive Prompting — Autoavaliação e Revisão da Resposta
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 
 ## 🪞 3. **Reflexive Prompting** — *Autoavaliação e Revisão da Resposta*

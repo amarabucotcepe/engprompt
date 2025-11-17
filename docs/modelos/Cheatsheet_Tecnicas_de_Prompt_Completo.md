@@ -3,7 +3,6 @@
 
 - **Curso:** Engenharia de Prompt para Servidores Públicos  
 - **Autor:** Adriano Marabuco  
-- **Versão Didática:** Prof. ChatGPT (IA Educacional)
 
 ---
 

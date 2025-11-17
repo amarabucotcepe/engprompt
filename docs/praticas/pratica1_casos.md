@@ -1,7 +1,6 @@
 # 🎓 Aula 4 — Exercitando Prompts Básicos (versão com storytelling + avaliação)
 
 Cada dinâmica mantém 1 h de duração e estrutura comum (apresentação → execução → avaliação).
-Os casos agora trazem **enredo, personagens e contexto administrativo**, tornando a atividade mais envolvente.
 
 ---
 

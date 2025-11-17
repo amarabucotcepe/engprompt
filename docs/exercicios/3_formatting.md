@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica:** Formatting Prompting
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ## 💡 Atividade Proposta
 

@@ -2,7 +2,7 @@
 
 **Tema:** Testar, medir e refinar para atingir resultados ideais
 **Autor:** Adriano Marabuco
-**Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ---
 

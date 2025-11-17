@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco  
 > **Técnica:** Instruction Prompting  
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)  
+  
 
 ---
 

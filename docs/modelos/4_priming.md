@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica:** Priming
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ---
 

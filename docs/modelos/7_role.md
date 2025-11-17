@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica** Role Prompting — Interpretação de Papéis
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ## 🎭 2. **Role Prompting** — *Interpretação de Papéis*
 

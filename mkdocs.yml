@@ -6,13 +6,38 @@ nav:
   - Início: index.md
   - Aulas:
       - Fluxos: aulas/fluxos.md      
+      - LGPD: aulas/lgpd2.md      
   - Modelos:
     - Prompts Básicos:
       - Zero Shot: modelos/0_zero_shot.md
-      - Few Shot: modelos/1_few_shot.md      
+      - Few Shot: modelos/1_few_shot.md
+      - Instruction: modelos/2_instruction.md
+      - Formatting: modelos/3_formatting.md
+      - Priming: modelos/4_priming.md  
     - Prompts Avançados:
       - Meta Prompt: modelos/6_meta.md
+      - Role: modelos/7_role.md
+      - Chain of Thought: modelos/8_cot.md
+      - Reflexive: modelos/9_reflexive.md
+      - RAG: modelos/10_rag.md
+      - ReAct: modelos/11_ReAct.md
   - Exercicios:
-      - Zero Shot: exercicios/0_zero_shot.md
-      - Few Shot: exercicios/1_few_shot.md
+    - Prompts Básicos:
+        - Zero Shot: exercicios/0_zero_shot.md
+        - Few Shot: exercicios/1_few_shot.md
+        - Instruction: exercicios/2_instruction.md
+        - Formatting: exercicios/3_formatting.md
+        - Priming: exercicios/4_priming.md
+    - Prompts Avançados:
       - Meta Prompt: exercicios/6_meta.md
+      - Role: exercicios/7_role.md
+      - Chain of Thought: exercicios/8_cot.md
+      - Reflexive: exercicios/9_reflexive.md
+      - RAG: exercicios/10_rag.md
+      - ReAct: exercicios/11_ReAct.md
+  - Praticas:
+      - Praticas Básicas: praticas/pratica1_casos.md
+      - Praticas Avançadas: praticas/pratica2.md
+  - Referencias: referencias.md      
+
+      

@@ -1,7 +1,6 @@
 # 🧩 Engenharia de Prompt para Servidores Públicos
 
 > **Autor:** Adriano Marabuco  
-> **Versão Didática:** Prof. ChatGPT (IA Educacional)  
 > **Atualizado em:** Outubro de 2025  
 
 ---
@@ -49,16 +48,12 @@ Durante o curso, o servidor público desenvolverá competências essenciais para
 O curso combina **aulas teóricas**, **exemplos práticos**, **exercícios de simulação** e **laboratórios interativos** com IA.  
 A cada módulo, o aluno aplica o conteúdo em situações reais de trabalho — elaborando pareceres, relatórios e análises automatizadas com qualidade e segurança.
 
-> ⚖️ “A IA só é inteligente quando o servidor é consciente.”  
-> — *Adriano Marabuco*
 
 ---
 
 ## 🧩 Ferramentas Utilizadas
 
 - 🧠 **ChatGPT / Claude / Gemini / Copilot** — plataformas para interação com IA.  
-- 💻 **MkDocs + Material Theme** — ambiente de documentação do curso.
-- 📄 **Arquivos institucionais** (PDF, planilhas, imagens) — para práticas multimodais.  
 - 🧾 **Modelos de Prompt** — templates padronizados fornecidos ao aluno.  
 
 ---

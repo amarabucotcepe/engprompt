@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco 
 > **Técnica** Meta Prompting — Reflexão sobre o Próprio Prompt 
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional) 
+ 
 
 
 ## ⚙️ 4. **Meta Prompting** — *Reflexão sobre o Próprio Prompt*

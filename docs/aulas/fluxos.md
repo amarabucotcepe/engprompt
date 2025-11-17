@@ -2,7 +2,7 @@
 
 **Tema:** Combinação e encadeamento de múltiplos prompts
 **Autor:** Adriano Marabuco
-**Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ---
 

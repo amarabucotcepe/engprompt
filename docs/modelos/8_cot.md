@@ -2,7 +2,7 @@
 
 > **Autor:** Adriano Marabuco
 > **Técnica** Chain of Thought (CoT) — Raciocínio Passo a Passo
-> **Revisão Didática:** Prof. ChatGPT (IA Educacional)
+
 
 ---
 
