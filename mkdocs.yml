@@ -3,7 +3,7 @@ theme:
   name: material
   language: pt
 nav:
-  - index.md
+  - Home: index.md
   - Aulas:
       - Fluxos: aulas/fluxos.md      
       - LGPD: aulas/lgpd2.md      
