@@ -41,7 +41,7 @@ Cada grupo deverá **combinar múltiplas técnicas de prompting** — básicas e
 1. **Chain of Thought (CoT)** – para raciocinar sobre causas e consequências.
 2. **RAG ou ReAct** – para buscar leis, relatórios ou normas relevantes (ex.: PNATE, FNDE, Lei 14.133/2021).
 3. **Role Prompting** – para redigir a resposta como um gestor público.
-4. **Reflexive Prompting** – para revisar e aprimorar a resposta final.
+4. **self-reflexive Prompting** – para revisar e aprimorar a resposta final.
 
 ---
 
@@ -68,7 +68,7 @@ Cada grupo deverá **combinar múltiplas técnicas de prompting** — básicas e
 2. **Transcrição resumida do fluxo de prompts**
 
    * 3 a 6 blocos de prompts usados, com observações sobre os resultados e ajustes.
-   * Identificação das técnicas aplicadas (ex.: CoT, ReAct, Reflexive).
+   * Identificação das técnicas aplicadas (ex.: CoT, ReAct, self-reflexive).
 
 ---
 
@@ -81,7 +81,7 @@ Você é um avaliador de projetos de IA no setor público.
 
 Analise o documento e o log de conversas fornecidos, atribuindo notas de 0 a 10 para cada critério:
 
-1. **Domínio Técnico (0–3)** — uso eficaz das técnicas de prompting (CoT, Role, Reflexive, RAG/ReAct).
+1. **Domínio Técnico (0–3)** — uso eficaz das técnicas de prompting (CoT, Role, self-reflexive, RAG/ReAct).
 2. **Clareza e Estrutura (0–2)** — organização, fluidez e formatação do documento final.
 3. **Impacto e Criatividade (0–2)** — originalidade e aplicabilidade das soluções propostas.
 4. **Ética e Conformidade (0–2)** — ausência de vieses, dados pessoais e respeito à LGPD.
@@ -135,7 +135,7 @@ Retorne a nota total e um comentário avaliativo (5 linhas máx.), destacando po
 Cada grupo compartilha **um aprendizado essencial** e **um erro que não repetiria**.
 O professor sintetiza mostrando como cada técnica contribui para:
 
-* **Transparência** (CoT e Reflexive)
+* **Transparência** (CoT e self-reflexive)
 * **Governança** (Role e LGPD)
 * **Eficiência pública** (RAG e ReAct)
 

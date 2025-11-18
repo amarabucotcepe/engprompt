@@ -68,7 +68,7 @@ Utilize o método ReAct (Reason + Act).
 | **ReAct (Reason + Act)**   | 🧩 Pensar e agir em ciclos  | Tarefas complexas com necessidade de raciocínio e verificação | Permite decisões mais seguras e fundamentadas | Pode gerar respostas extensas se mal delimitada |
 | **Chain of Thought (CoT)** | 🧠 Raciocínio passo a passo | Quando é preciso justificar uma conclusão                     | Explicações transparentes e coerentes         | Tende a ser linear, sem ajustes intermediários  |
 | **RAG**                    | 🔎 Busca e geração          | Quando há base documental externa                             | Usa dados reais e reduz erros factuais        | Depende da qualidade das fontes                 |
-| **Reflexive Prompting**    | 🪞 Autoavaliação            | Quando é necessário revisar ou aprimorar respostas            | Melhora a consistência textual                | Requer tempo adicional                          |
+| **self-reflexive Prompting**    | 🪞 Autoavaliação            | Quando é necessário revisar ou aprimorar respostas            | Melhora a consistência textual                | Requer tempo adicional                          |
 | **Meta Prompting**         | 🔁 Metacognição             | Quando se deseja avaliar e aprimorar prompts                  | Gera aprendizado institucional                | Requer domínio das demais técnicas              |
 
 ---

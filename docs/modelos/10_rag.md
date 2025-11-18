@@ -74,7 +74,7 @@ Depois, gere a resposta final explicando a base legal da decisão.
 | ----------------------- | ------------------------- | ------------------------------------ | --------------------------------------------------------------------- | --------------------------------------------------- |
 | **RAG**                 | 🔹 Intermediário-Avançado | Combinar busca e geração de conteúdo | Consultas normativas, sínteses de relatórios, pareceres fundamentados | Depende da qualidade e atualização da base de dados |
 | **Chain of Thought**    | 🔸 Avançado               | Raciocínio passo a passo             | Análises complexas e decisões justificadas                            | Textos longos                                       |
-| **Reflexive Prompting** | 🔸 Avançado               | Autoavaliação da resposta            | Revisão e padronização textual                                        | Maior tempo de resposta                             |
+| **self-reflexive Prompting** | 🔸 Avançado               | Autoavaliação da resposta            | Revisão e padronização textual                                        | Maior tempo de resposta                             |
 
 ---
 

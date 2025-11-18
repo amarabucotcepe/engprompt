@@ -18,7 +18,7 @@ nav:
       - Meta Prompt: modelos/6_meta.md
       - Role: modelos/7_role.md
       - Chain of Thought: modelos/8_cot.md
-      - Reflexive: modelos/9_reflexive.md
+      - self-reflexive: modelos/9_reflexive.md
       - RAG: modelos/10_rag.md
       - ReAct: modelos/11_ReAct.md
   - Exercicios:
@@ -32,7 +32,7 @@ nav:
       - Meta Prompt: exercicios/6_meta.md
       - Role: exercicios/7_role.md
       - Chain of Thought: exercicios/8_cot.md
-      - Reflexive: exercicios/9_reflexive.md
+      - self-reflexive: exercicios/9_reflexive.md
       - RAG: exercicios/10_rag.md
       - ReAct: exercicios/11_ReAct.md
   - Praticas:

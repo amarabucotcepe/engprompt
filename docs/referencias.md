@@ -104,7 +104,7 @@
 
 ---
 
-### Técnicas Avançadas - Reflexive (Reflexão)
+### Técnicas Avançadas - self-reflexive (Reflexão)
 
 * **Citação:**
     * MADAAN, Aman et al. **Self-refine: Iterative refinement with self-feedback.** Advances in Neural Information Processing Systems, v. 36, p. 46534-46594, 2023. [cite: 217]

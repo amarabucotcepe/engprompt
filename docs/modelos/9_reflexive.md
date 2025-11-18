@@ -1,11 +1,11 @@
 # 🧠 Curso de Engenharia de Prompt para Servidores Públicos
 
 > **Autor:** Adriano Marabuco
-> **Técnica** Reflexive Prompting — Autoavaliação e Revisão da Resposta
+> **Técnica** self-reflexive Prompting — Autoavaliação e Revisão da Resposta
 
 
 
-## 🪞 3. **Reflexive Prompting** — *Autoavaliação e Revisão da Resposta*
+## 🪞 3. **self-reflexive Prompting** — *Autoavaliação e Revisão da Resposta*
 
 ---
 
@@ -20,7 +20,7 @@ Essa técnica melhora a qualidade final e reduz erros de coerência e estilo.
 
 ### 📘 Conceito
 
-O *Reflexive Prompting* faz o modelo **voltar sobre o próprio raciocínio** e aplicar critérios de revisão (clareza, completude, coerência, tom, etc.).
+O *self-reflexive Prompting* faz o modelo **voltar sobre o próprio raciocínio** e aplicar critérios de revisão (clareza, completude, coerência, tom, etc.).
 
 ---
 

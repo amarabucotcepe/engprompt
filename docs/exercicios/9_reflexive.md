@@ -1,7 +1,7 @@
 # 🧠 Curso de Engenharia de Prompt para Servidores Públicos
 
 > **Autor:** Adriano Marabuco
-> **Técnica** Reflexive Prompting — Autoavaliação e Revisão da Resposta
+> **Técnica** self-reflexive Prompting — Autoavaliação e Revisão da Resposta
 
 
 

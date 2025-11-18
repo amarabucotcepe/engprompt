@@ -24,7 +24,7 @@
 |----------|----------|--------------|----------------|------------------------------|
 | **Chain of Thought (CoT)** | Ensina a IA a raciocinar passo a passo | Em decisões complexas ou pareceres administrativos | `Pense passo a passo antes de responder. Explique o raciocínio e finalize com Conclusão.` | Parecer técnico com análise e justificativa legal. |
 | **Role Prompting** | Simula papéis institucionais | Quando é preciso adotar diferentes pontos de vista | `Você é {cargo}. Seu público é {grupo}. Sua tarefa é {ação}.` | Redigir relatório sob o ponto de vista do auditor. |
-| **Reflexive Prompting** | Autoavaliação da resposta | Quando é preciso revisar e melhorar resultados | `Responda. Depois revise conforme critérios: clareza, coerência, tom.` | Revisar texto de despacho para linguagem oficial. |
+| **self-reflexive Prompting** | Autoavaliação da resposta | Quando é preciso revisar e melhorar resultados | `Responda. Depois revise conforme critérios: clareza, coerência, tom.` | Revisar texto de despacho para linguagem oficial. |
 | **Meta Prompting** | Avaliar ou otimizar um prompt | Quando se quer ensinar ou corrigir prompts | `Analise o prompt: {texto}. Liste melhorias e reescreva versão otimizada.` | Melhorar prompt de relatório padronizado do órgão. |
 | **RAG (Retrieval-Augmented Generation)** | Busca + geração | Quando há necessidade de citar documentos, leis ou relatórios | `Busque nas fontes {X}. Recupere, sintetize e gere resposta final.` | Consultar leis e gerar parecer fundamentado. |
 | **ReAct (Reason + Act)** | Pensar e agir em ciclos | Quando é preciso alternar entre raciocínio e ação | `Raciocínio: … / Ação: … / Observação: … / Conclusão: …` | Verificar contratos, consultar norma e emitir decisão. |
@@ -50,7 +50,7 @@
 | Deseja replicar padrão existente | Few-Shot |
 | Quer ajustar o tom e papel | Priming ou Role |
 | Precisa justificar decisão | Chain of Thought |
-| Quer revisar e melhorar texto | Reflexive |
+| Quer revisar e melhorar texto | self-reflexive |
 | Quer aprimorar um prompt existente | Meta |
 | Precisa citar leis ou dados externos | RAG |
 | Precisa agir e pensar em etapas | ReAct |
@@ -68,7 +68,7 @@
 4. **Pense em processos:** combine técnicas em fluxos lógicos.  
 5. **Valide e experimente:** teste múltiplas versões e registre resultados.  
 6. **Sempre cite fontes:** use *RAG* e *Recursos Externos* para basear respostas em fatos.  
-7. **Reflita e melhore:** finalize com *Reflexive* ou *Meta Prompting*.
+7. **Reflita e melhore:** finalize com *self-reflexive* ou *Meta Prompting*.
 
 ---
 
@@ -90,7 +90,7 @@ Retorne o resultado no formato {tabela, texto, ofício, relatório, etc.}.
 1. Raciocine passo a passo.  
 2. Consulte fontes (RAG) ou aja (ReAct).  
 3. Gere a resposta.  
-4. Revise o texto conforme critérios institucionais (Reflexive).
+4. Revise o texto conforme critérios institucionais (self-reflexive).
 
 # 🔁 Melhoria Contínua
 Explique como o prompt poderia ser otimizado (Meta Prompting).

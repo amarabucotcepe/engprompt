@@ -36,7 +36,7 @@ Isso permite:
         ↓
 [Prompt 3: Síntese e Redação do Documento Final]
         ↓
-[Prompt 4: Revisão e Padronização (Reflexive ou Meta Prompt)]
+[Prompt 4: Revisão e Padronização (self-reflexive ou Meta Prompt)]
 ```
 
 💡 Cada etapa pode empregar uma técnica diferente:
@@ -44,7 +44,7 @@ Isso permite:
 * Zero-Shot / Instruction no início (para contextualizar);
 * Chain of Thought ou Role para análise;
 * Formatting ou Priming na redação;
-* Reflexive ou Meta Prompt para revisão final.
+* self-reflexive ou Meta Prompt para revisão final.
 
 ---
 
@@ -62,7 +62,7 @@ Isso permite:
 
 > “Redija um relatório técnico para a diretoria, com linguagem formal, seguindo o formato: Introdução / Diagnóstico / Recomendações.”
 
-### Etapa 4: Revisão e validação (*Reflexive Prompting*)
+### Etapa 4: Revisão e validação (*self-reflexive Prompting*)
 
 > “Revise o relatório anterior, verificando clareza, coerência técnica e tom institucional.”
 
@@ -95,7 +95,7 @@ Isso permite:
 | Finalidade                | Estrutura de Fluxo                                             | Técnicas Indicadas               |
 | ------------------------- | -------------------------------------------------------------- | -------------------------------- |
 | **Análise Técnica**       | Coleta → Raciocínio → Conclusão                                | Instruction + CoT + Formatting   |
-| **Redação Oficial**       | Contexto → Redação → Revisão                                   | Priming + Formatting + Reflexive |
+| **Redação Oficial**       | Contexto → Redação → Revisão                                   | Priming + Formatting + self-reflexive |
 | **Tomada de Decisão**     | Diagnóstico → Avaliação → Escolha → Justificativa              | CoT + Role + ReAct               |
 | **Geração de Parecer**    | Leitura de documentos → Interpretação → Conclusão fundamentada | RAG + CoT + Meta Prompt          |
 | **Auditoria ou Controle** | Consulta → Verificação → Relatório                             | RAG + ReAct + Formatting         |

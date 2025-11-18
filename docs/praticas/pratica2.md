@@ -1,6 +1,6 @@
 Perfeito, Adriano 👏 — agora avançamos para a **Aula 5 – Exercitando Prompts Avançados**, mantendo o mesmo padrão didático da Aula 4, mas com **maior complexidade, storytelling mais rico e foco em raciocínio, papéis institucionais e autorreflexão**.
 
-Cada dinâmica (Chain of Thought, Role Prompting, Reflexive Prompting e RAG/ReAct combinados) dura cerca de **60 minutos**, permitindo debate e análise crítica.
+Cada dinâmica (Chain of Thought, Role Prompting, self-reflexive Prompting e RAG/ReAct combinados) dura cerca de **60 minutos**, permitindo debate e análise crítica.
 Ao final, o professor pode aplicar as **rubricas automatizadas** com IA avaliadora.
 
 ---
@@ -91,14 +91,14 @@ Forneça nota total e justificativa breve.
 
 ---
 
-## 🧩 3) Reflexive Prompting — **“O Relatório que se Corrige”**
+## 🧩 3) self-reflexive Prompting — **“O Relatório que se Corrige”**
 
 **Enredo**
 O Controlador Interno solicita um **relatório de acompanhamento de metas ambientais** (redução de consumo de energia elétrica nos prédios públicos).
 O servidor gera a primeira versão com IA, mas agora deve criar um prompt que **peça à própria IA para revisar e aperfeiçoar o texto**, justificando as alterações — *como se fosse um revisor interno*.
 
 **Desafio**
-Usar *reflexive prompting* (autoavaliação + autocorreção da IA).
+Usar *self-reflexive prompting* (autoavaliação + autocorreção da IA).
 
 **Objetivo didático**
 Aprender a implementar ciclos de revisão, melhorando precisão e estilo.
@@ -170,7 +170,7 @@ Inclua nota final e comentário curto.
 
 | Critério                         | Peso | Descrição                                                          |
 | -------------------------------- | ---- | ------------------------------------------------------------------ |
-| Aplicação correta da técnica     | 0–3  | O prompt segue o padrão proposto (CoT, Role, Reflexive, RAG/ReAct) |
+| Aplicação correta da técnica     | 0–3  | O prompt segue o padrão proposto (CoT, Role, self-reflexive, RAG/ReAct) |
 | Clareza e completude da resposta | 0–3  | O produto é claro, objetivo e consistente                          |
 | Ética e LGPD                     | 0–2  | Nenhum dado pessoal ou decisão antiética                           |
 | Reflexão crítica do grupo        | 0–2  | Os alunos explicam o que aprenderam ou ajustariam                  |

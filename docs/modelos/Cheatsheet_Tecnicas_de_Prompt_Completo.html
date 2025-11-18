@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
@@ -13,6 +14,7 @@
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
+
     body {
       margin: 0 auto;
       max-width: 36em;
@@ -25,88 +27,121 @@
       text-rendering: optimizeLegibility;
       font-kerning: normal;
     }
+
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
         padding: 1em;
       }
+
       h1 {
         font-size: 1.8em;
       }
     }
+
     @media print {
       body {
         background-color: transparent;
         color: black;
         font-size: 12pt;
       }
-      p, h2, h3 {
+
+      p,
+      h2,
+      h3 {
         orphans: 3;
         widows: 3;
       }
-      h2, h3, h4 {
+
+      h2,
+      h3,
+      h4 {
         page-break-after: avoid;
       }
     }
+
     p {
       margin: 1em 0;
     }
+
     a {
       color: #1a1a1a;
     }
+
     a:visited {
       color: #1a1a1a;
     }
+
     img {
       max-width: 100%;
     }
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin-top: 1.4em;
     }
-    h5, h6 {
+
+    h5,
+    h6 {
       font-size: 1em;
       font-style: italic;
     }
+
     h6 {
       font-weight: normal;
     }
-    ol, ul {
+
+    ol,
+    ul {
       padding-left: 1.7em;
       margin-top: 1em;
     }
-    li > ol, li > ul {
+
+    li>ol,
+    li>ul {
       margin-top: 0;
     }
+
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
       border-left: 2px solid #e6e6e6;
       color: #606060;
     }
+
     code {
       font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
       font-size: 85%;
       margin: 0;
     }
+
     pre {
       margin: 1em 0;
       overflow: auto;
     }
+
     pre code {
       padding: 0;
       overflow: visible;
       overflow-wrap: normal;
     }
+
     .sourceCode {
-     background-color: transparent;
-     overflow: visible;
+      background-color: transparent;
+      overflow: visible;
     }
+
     hr {
       background-color: #1a1a1a;
       border: none;
       height: 1px;
       margin: 1em 0;
     }
+
     table {
       margin: 1em 0;
       border-collapse: collapse;
@@ -115,360 +150,584 @@
       display: block;
       font-variant-numeric: lining-nums tabular-nums;
     }
+
     table caption {
       margin-bottom: 0.75em;
     }
+
     tbody {
       margin-top: 0.5em;
       border-top: 1px solid #1a1a1a;
       border-bottom: 1px solid #1a1a1a;
     }
+
     th {
       border-top: 1px solid #1a1a1a;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
+
     td {
       padding: 0.125em 0.5em 0.25em 0.5em;
     }
+
     header {
       margin-bottom: 4em;
       text-align: center;
     }
+
     #TOC li {
       list-style: none;
     }
+
     #TOC ul {
       padding-left: 1.3em;
     }
-    #TOC > ul {
+
+    #TOC>ul {
       padding-left: 0;
     }
+
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
+
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    span.underline {
+      text-decoration: underline;
+    }
+
+    div.column {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list {
+      list-style: none;
+    }
+
+    pre>code.sourceCode {
+      white-space: pre;
+      position: relative;
+    }
+
+    pre>code.sourceCode>span {
+      display: inline-block;
+      line-height: 1.25;
+    }
+
+    pre>code.sourceCode>span:empty {
+      height: 1.2em;
+    }
+
+    .sourceCode {
+      overflow: visible;
+    }
+
+    code.sourceCode>span {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    div.sourceCode {
+      margin: 1em 0;
+    }
+
+    pre.sourceCode {
+      margin: 0;
+    }
+
     @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
+      div.sourceCode {
+        overflow: auto;
       }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+    @media print {
+      pre>code.sourceCode {
+        white-space: pre-wrap;
+      }
+
+      pre>code.sourceCode>span {
+        text-indent: -5em;
+        padding-left: 5em;
+      }
+    }
+
+    pre.numberSource code {
+      counter-reset: source-line 0;
+    }
+
+    pre.numberSource code>span {
+      position: relative;
+      left: -4em;
+      counter-increment: source-line;
+    }
+
+    pre.numberSource code>span>a:first-child::before {
+      content: counter(source-line);
+      position: relative;
+      left: -1em;
+      text-align: right;
+      vertical-align: baseline;
+      border: none;
+      display: inline-block;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      padding: 0 4px;
+      width: 4em;
+      color: #aaaaaa;
+    }
+
+    pre.numberSource {
+      margin-left: 3em;
+      border-left: 1px solid #aaaaaa;
+      padding-left: 4px;
+    }
+
+    div.sourceCode {}
+
+    @media screen {
+      pre>code.sourceCode>span>a:first-child::before {
+        text-decoration: underline;
+      }
+    }
+
+    code span.al {
+      color: #ff0000;
+      font-weight: bold;
+    }
+
+    /* Alert */
+    code span.an {
+      color: #60a0b0;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* Annotation */
+    code span.at {
+      color: #7d9029;
+    }
+
+    /* Attribute */
+    code span.bn {
+      color: #40a070;
+    }
+
+    /* BaseN */
+    code span.bu {
+      color: #008000;
+    }
+
+    /* BuiltIn */
+    code span.cf {
+      color: #007020;
+      font-weight: bold;
+    }
+
+    /* ControlFlow */
+    code span.ch {
+      color: #4070a0;
+    }
+
+    /* Char */
+    code span.cn {
+      color: #880000;
+    }
+
+    /* Constant */
+    code span.co {
+      color: #60a0b0;
+      font-style: italic;
+    }
+
+    /* Comment */
+    code span.cv {
+      color: #60a0b0;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* CommentVar */
+    code span.do {
+      color: #ba2121;
+      font-style: italic;
+    }
+
+    /* Documentation */
+    code span.dt {
+      color: #902000;
+    }
+
+    /* DataType */
+    code span.dv {
+      color: #40a070;
+    }
+
+    /* DecVal */
+    code span.er {
+      color: #ff0000;
+      font-weight: bold;
+    }
+
+    /* Error */
+    code span.ex {}
+
+    /* Extension */
+    code span.fl {
+      color: #40a070;
+    }
+
+    /* Float */
+    code span.fu {
+      color: #06287e;
+    }
+
+    /* Function */
+    code span.im {
+      color: #008000;
+      font-weight: bold;
+    }
+
+    /* Import */
+    code span.in {
+      color: #60a0b0;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* Information */
+    code span.kw {
+      color: #007020;
+      font-weight: bold;
+    }
+
+    /* Keyword */
+    code span.op {
+      color: #666666;
+    }
+
+    /* Operator */
+    code span.ot {
+      color: #007020;
+    }
+
+    /* Other */
+    code span.pp {
+      color: #bc7a00;
+    }
+
+    /* Preprocessor */
+    code span.sc {
+      color: #4070a0;
+    }
+
+    /* SpecialChar */
+    code span.ss {
+      color: #bb6688;
+    }
+
+    /* SpecialString */
+    code span.st {
+      color: #4070a0;
+    }
+
+    /* String */
+    code span.va {
+      color: #19177c;
+    }
+
+    /* Variable */
+    code span.vs {
+      color: #4070a0;
+    }
+
+    /* VerbatimString */
+    code span.wa {
+      color: #60a0b0;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    /* Warning */
+    .display.math {
+      display: block;
+      text-align: center;
+      margin: 0.5rem auto;
+    }
   </style>
 </head>
+
 <body>
-<h1 id="cheatsheet-técnicas-de-engenharia-de-prompt">🧩 Cheatsheet –
-Técnicas de Engenharia de Prompt</h1>
-<p><strong>Curso:</strong> Engenharia de Prompt para Servidores
-Públicos<br />
-<strong>Autor:</strong> Adriano Marabuco<br />
-<strong>Versão Didática:</strong> Prof. ChatGPT (IA Educacional)</p>
-<hr />
-<h2 id="prompts-básicos">🧱 PROMPTS BÁSICOS</h2>
-<table>
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 17%" />
-<col style="width: 20%" />
-<col style="width: 37%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Técnica</th>
-<th>O que é</th>
-<th>Quando Usar</th>
-<th>Estrutura Base</th>
-<th>Exemplo de Aplicação Pública</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Zero-Shot</strong></td>
-<td>Instrução direta, sem exemplos</td>
-<td>Tarefas simples e objetivas</td>
-<td><code>Sua tarefa é {tarefa}. Retorne no formato {formato}.</code></td>
-<td>Gerar despacho curto comunicando atraso no pagamento.</td>
-</tr>
-<tr class="even">
-<td><strong>Instruction</strong></td>
-<td>Instrução detalhada com regras</td>
-<td>Quando há critérios, restrições ou público específico</td>
-<td><code>Sua tarefa é {tarefa}. Considere {contexto}.</code></td>
-<td>Justificativa formal com até 6 linhas e tom impessoal.</td>
-</tr>
-<tr class="odd">
-<td><strong>Few-Shot</strong></td>
-<td>Ensinando por exemplo</td>
-<td>Quando há padrão ou modelo de resposta</td>
-<td><code>Exemplo 1: entrada → saída / Exemplo 2: entrada → saída / Agora gere a saída.</code></td>
-<td>Classificação de manifestações de ouvidoria.</td>
-</tr>
-<tr class="even">
-<td><strong>Formatting</strong></td>
-<td>Controle da forma da resposta</td>
-<td>Quando é necessário padronizar formato</td>
-<td><code>Apresente o resultado no formato: {modelo}.</code></td>
-<td>Gerar relatório com colunas: Causa / Consequência / Ação.</td>
-</tr>
-<tr class="odd">
-<td><strong>Priming</strong></td>
-<td>Condicionamento do papel e tom</td>
-<td>Quando é necessário ajustar o estilo de escrita</td>
-<td><code>Você é {função}. Seu objetivo é {meta}. Use tom {formal/técnico}.</code></td>
-<td>“Você é analista da SEFAZ. Redija parecer sobre aditivo
-contratual.”</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="prompts-avançados">⚙️ PROMPTS AVANÇADOS</h2>
-<table>
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 17%" />
-<col style="width: 20%" />
-<col style="width: 37%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Técnica</th>
-<th>O que é</th>
-<th>Quando Usar</th>
-<th>Estrutura Base</th>
-<th>Exemplo de Aplicação Pública</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Chain of Thought (CoT)</strong></td>
-<td>Ensina a IA a raciocinar passo a passo</td>
-<td>Em decisões complexas ou pareceres administrativos</td>
-<td><code>Pense passo a passo antes de responder. Explique o raciocínio e finalize com Conclusão.</code></td>
-<td>Parecer técnico com análise e justificativa legal.</td>
-</tr>
-<tr class="even">
-<td><strong>Role Prompting</strong></td>
-<td>Simula papéis institucionais</td>
-<td>Quando é preciso adotar diferentes pontos de vista</td>
-<td><code>Você é {cargo}. Seu público é {grupo}. Sua tarefa é {ação}.</code></td>
-<td>Redigir relatório sob o ponto de vista do auditor.</td>
-</tr>
-<tr class="odd">
-<td><strong>Reflexive Prompting</strong></td>
-<td>Autoavaliação da resposta</td>
-<td>Quando é preciso revisar e melhorar resultados</td>
-<td><code>Responda. Depois revise conforme critérios: clareza, coerência, tom.</code></td>
-<td>Revisar texto de despacho para linguagem oficial.</td>
-</tr>
-<tr class="even">
-<td><strong>Meta Prompting</strong></td>
-<td>Avaliar ou otimizar um prompt</td>
-<td>Quando se quer ensinar ou corrigir prompts</td>
-<td><code>Analise o prompt: {texto}. Liste melhorias e reescreva versão otimizada.</code></td>
-<td>Melhorar prompt de relatório padronizado do órgão.</td>
-</tr>
-<tr class="odd">
-<td><strong>RAG (Retrieval-Augmented Generation)</strong></td>
-<td>Busca + geração</td>
-<td>Quando há necessidade de citar documentos, leis ou relatórios</td>
-<td><code>Busque nas fontes {X}. Recupere, sintetize e gere resposta final.</code></td>
-<td>Consultar leis e gerar parecer fundamentado.</td>
-</tr>
-<tr class="even">
-<td><strong>ReAct (Reason + Act)</strong></td>
-<td>Pensar e agir em ciclos</td>
-<td>Quando é preciso alternar entre raciocínio e ação</td>
-<td><code>Raciocínio: … / Ação: … / Observação: … / Conclusão: …</code></td>
-<td>Verificar contratos, consultar norma e emitir decisão.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="prompts-complementares">🔁 PROMPTS COMPLEMENTARES</h2>
-<table>
-<colgroup>
-<col style="width: 30%" />
-<col style="width: 36%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Técnica</th>
-<th>Propósito</th>
-<th>Aplicação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Fluxos de Prompts</strong></td>
-<td>Combinar múltiplos prompts em sequência lógica</td>
-<td>Ex: Coleta → Análise → Geração → Revisão</td>
-</tr>
-<tr class="even">
-<td><strong>Experimentação de Prompts</strong></td>
-<td>Testar, comparar e otimizar versões</td>
-<td>Criar 3 variações do mesmo prompt e avaliar resultados</td>
-</tr>
-<tr class="odd">
-<td><strong>Recursos Externos</strong></td>
-<td>Integrar arquivos, bases, buscas e APIs</td>
-<td>Enriquecer o contexto e validar respostas</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="escolhendo-a-técnica-certa">🧭 ESCOLHENDO A TÉCNICA CERTA</h2>
-<table>
-<thead>
-<tr class="header">
-<th>Situação</th>
-<th>Técnica Ideal</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Precisa de resposta rápida e direta</td>
-<td>Zero-Shot</td>
-</tr>
-<tr class="even">
-<td>Quer controlar formato e regras</td>
-<td>Instruction ou Formatting</td>
-</tr>
-<tr class="odd">
-<td>Deseja replicar padrão existente</td>
-<td>Few-Shot</td>
-</tr>
-<tr class="even">
-<td>Quer ajustar o tom e papel</td>
-<td>Priming ou Role</td>
-</tr>
-<tr class="odd">
-<td>Precisa justificar decisão</td>
-<td>Chain of Thought</td>
-</tr>
-<tr class="even">
-<td>Quer revisar e melhorar texto</td>
-<td>Reflexive</td>
-</tr>
-<tr class="odd">
-<td>Quer aprimorar um prompt existente</td>
-<td>Meta</td>
-</tr>
-<tr class="even">
-<td>Precisa citar leis ou dados externos</td>
-<td>RAG</td>
-</tr>
-<tr class="odd">
-<td>Precisa agir e pensar em etapas</td>
-<td>ReAct</td>
-</tr>
-<tr class="even">
-<td>Quer combinar tudo em processo completo</td>
-<td>Fluxo de Prompts</td>
-</tr>
-<tr class="odd">
-<td>Quer testar e medir resultados</td>
-<td>Experimentação</td>
-</tr>
-<tr class="even">
-<td>Precisa validar com arquivos e fontes</td>
-<td>Recursos Externos</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="dicas-gerais-do-professor">💡 Dicas Gerais do Professor</h2>
-<ol type="1">
-<li><strong>Comece simples:</strong> use <em>Zero-Shot</em> para testar
-o comportamento inicial.<br />
-</li>
-<li><strong>Adicione estrutura:</strong> com <em>Instruction</em> e
-<em>Formatting</em>, ganhe controle.<br />
-</li>
-<li><strong>Refine pelo contexto:</strong> use <em>Priming</em> ou
-<em>Role</em> para adequar o tom.<br />
-</li>
-<li><strong>Pense em processos:</strong> combine técnicas em fluxos
-lógicos.<br />
-</li>
-<li><strong>Valide e experimente:</strong> teste múltiplas versões e
-registre resultados.<br />
-</li>
-<li><strong>Sempre cite fontes:</strong> use <em>RAG</em> e <em>Recursos
-Externos</em> para basear respostas em fatos.<br />
-</li>
-<li><strong>Reflita e melhore:</strong> finalize com <em>Reflexive</em>
-ou <em>Meta Prompting</em>.</li>
-</ol>
-<hr />
-<h2 id="estrutura-mestre-prompt-profissional-completo">🧩 Estrutura
-Mestre – Prompt Profissional Completo</h2>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 🎭 Contexto e Papel</span></span>
+  <h1 id="cheatsheet-técnicas-de-engenharia-de-prompt">🧩 Cheatsheet –
+    Técnicas de Engenharia de Prompt</h1>
+  <p><strong>Curso:</strong> Engenharia de Prompt para Servidores
+    Públicos<br />
+    <strong>Autor:</strong> Adriano Marabuco<br />
+    <strong>Versão Didática:</strong> Prof. ChatGPT (IA Educacional)
+  </p>
+  <hr />
+  <h2 id="prompts-básicos">🧱 PROMPTS BÁSICOS</h2>
+  <table>
+    <colgroup>
+      <col style="width: 12%" />
+      <col style="width: 12%" />
+      <col style="width: 17%" />
+      <col style="width: 20%" />
+      <col style="width: 37%" />
+    </colgroup>
+    <thead>
+      <tr class="header">
+        <th>Técnica</th>
+        <th>O que é</th>
+        <th>Quando Usar</th>
+        <th>Estrutura Base</th>
+        <th>Exemplo de Aplicação Pública</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td><strong>Zero-Shot</strong></td>
+        <td>Instrução direta, sem exemplos</td>
+        <td>Tarefas simples e objetivas</td>
+        <td><code>Sua tarefa é {tarefa}. Retorne no formato {formato}.</code></td>
+        <td>Gerar despacho curto comunicando atraso no pagamento.</td>
+      </tr>
+      <tr class="even">
+        <td><strong>Instruction</strong></td>
+        <td>Instrução detalhada com regras</td>
+        <td>Quando há critérios, restrições ou público específico</td>
+        <td><code>Sua tarefa é {tarefa}. Considere {contexto}.</code></td>
+        <td>Justificativa formal com até 6 linhas e tom impessoal.</td>
+      </tr>
+      <tr class="odd">
+        <td><strong>Few-Shot</strong></td>
+        <td>Ensinando por exemplo</td>
+        <td>Quando há padrão ou modelo de resposta</td>
+        <td><code>Exemplo 1: entrada → saída / Exemplo 2: entrada → saída / Agora gere a saída.</code></td>
+        <td>Classificação de manifestações de ouvidoria.</td>
+      </tr>
+      <tr class="even">
+        <td><strong>Formatting</strong></td>
+        <td>Controle da forma da resposta</td>
+        <td>Quando é necessário padronizar formato</td>
+        <td><code>Apresente o resultado no formato: {modelo}.</code></td>
+        <td>Gerar relatório com colunas: Causa / Consequência / Ação.</td>
+      </tr>
+      <tr class="odd">
+        <td><strong>Priming</strong></td>
+        <td>Condicionamento do papel e tom</td>
+        <td>Quando é necessário ajustar o estilo de escrita</td>
+        <td><code>Você é {função}. Seu objetivo é {meta}. Use tom {formal/técnico}.</code></td>
+        <td>“Você é analista da SEFAZ. Redija parecer sobre aditivo
+          contratual.”</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+  <h2 id="prompts-avançados">⚙️ PROMPTS AVANÇADOS</h2>
+  <table>
+    <colgroup>
+      <col style="width: 12%" />
+      <col style="width: 12%" />
+      <col style="width: 17%" />
+      <col style="width: 20%" />
+      <col style="width: 37%" />
+    </colgroup>
+    <thead>
+      <tr class="header">
+        <th>Técnica</th>
+        <th>O que é</th>
+        <th>Quando Usar</th>
+        <th>Estrutura Base</th>
+        <th>Exemplo de Aplicação Pública</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td><strong>Chain of Thought (CoT)</strong></td>
+        <td>Ensina a IA a raciocinar passo a passo</td>
+        <td>Em decisões complexas ou pareceres administrativos</td>
+        <td><code>Pense passo a passo antes de responder. Explique o raciocínio e finalize com Conclusão.</code></td>
+        <td>Parecer técnico com análise e justificativa legal.</td>
+      </tr>
+      <tr class="even">
+        <td><strong>Role Prompting</strong></td>
+        <td>Simula papéis institucionais</td>
+        <td>Quando é preciso adotar diferentes pontos de vista</td>
+        <td><code>Você é {cargo}. Seu público é {grupo}. Sua tarefa é {ação}.</code></td>
+        <td>Redigir relatório sob o ponto de vista do auditor.</td>
+      </tr>
+      <tr class="odd">
+        <td><strong>self-reflexive Prompting</strong></td>
+        <td>Autoavaliação da resposta</td>
+        <td>Quando é preciso revisar e melhorar resultados</td>
+        <td><code>Responda. Depois revise conforme critérios: clareza, coerência, tom.</code></td>
+        <td>Revisar texto de despacho para linguagem oficial.</td>
+      </tr>
+      <tr class="even">
+        <td><strong>Meta Prompting</strong></td>
+        <td>Avaliar ou otimizar um prompt</td>
+        <td>Quando se quer ensinar ou corrigir prompts</td>
+        <td><code>Analise o prompt: {texto}. Liste melhorias e reescreva versão otimizada.</code></td>
+        <td>Melhorar prompt de relatório padronizado do órgão.</td>
+      </tr>
+      <tr class="odd">
+        <td><strong>RAG (Retrieval-Augmented Generation)</strong></td>
+        <td>Busca + geração</td>
+        <td>Quando há necessidade de citar documentos, leis ou relatórios</td>
+        <td><code>Busque nas fontes {X}. Recupere, sintetize e gere resposta final.</code></td>
+        <td>Consultar leis e gerar parecer fundamentado.</td>
+      </tr>
+      <tr class="even">
+        <td><strong>ReAct (Reason + Act)</strong></td>
+        <td>Pensar e agir em ciclos</td>
+        <td>Quando é preciso alternar entre raciocínio e ação</td>
+        <td><code>Raciocínio: … / Ação: … / Observação: … / Conclusão: …</code></td>
+        <td>Verificar contratos, consultar norma e emitir decisão.</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+  <h2 id="prompts-complementares">🔁 PROMPTS COMPLEMENTARES</h2>
+  <table>
+    <colgroup>
+      <col style="width: 30%" />
+      <col style="width: 36%" />
+      <col style="width: 33%" />
+    </colgroup>
+    <thead>
+      <tr class="header">
+        <th>Técnica</th>
+        <th>Propósito</th>
+        <th>Aplicação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td><strong>Fluxos de Prompts</strong></td>
+        <td>Combinar múltiplos prompts em sequência lógica</td>
+        <td>Ex: Coleta → Análise → Geração → Revisão</td>
+      </tr>
+      <tr class="even">
+        <td><strong>Experimentação de Prompts</strong></td>
+        <td>Testar, comparar e otimizar versões</td>
+        <td>Criar 3 variações do mesmo prompt e avaliar resultados</td>
+      </tr>
+      <tr class="odd">
+        <td><strong>Recursos Externos</strong></td>
+        <td>Integrar arquivos, bases, buscas e APIs</td>
+        <td>Enriquecer o contexto e validar respostas</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+  <h2 id="escolhendo-a-técnica-certa">🧭 ESCOLHENDO A TÉCNICA CERTA</h2>
+  <table>
+    <thead>
+      <tr class="header">
+        <th>Situação</th>
+        <th>Técnica Ideal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td>Precisa de resposta rápida e direta</td>
+        <td>Zero-Shot</td>
+      </tr>
+      <tr class="even">
+        <td>Quer controlar formato e regras</td>
+        <td>Instruction ou Formatting</td>
+      </tr>
+      <tr class="odd">
+        <td>Deseja replicar padrão existente</td>
+        <td>Few-Shot</td>
+      </tr>
+      <tr class="even">
+        <td>Quer ajustar o tom e papel</td>
+        <td>Priming ou Role</td>
+      </tr>
+      <tr class="odd">
+        <td>Precisa justificar decisão</td>
+        <td>Chain of Thought</td>
+      </tr>
+      <tr class="even">
+        <td>Quer revisar e melhorar texto</td>
+        <td>self-reflexive</td>
+      </tr>
+      <tr class="odd">
+        <td>Quer aprimorar um prompt existente</td>
+        <td>Meta</td>
+      </tr>
+      <tr class="even">
+        <td>Precisa citar leis ou dados externos</td>
+        <td>RAG</td>
+      </tr>
+      <tr class="odd">
+        <td>Precisa agir e pensar em etapas</td>
+        <td>ReAct</td>
+      </tr>
+      <tr class="even">
+        <td>Quer combinar tudo em processo completo</td>
+        <td>Fluxo de Prompts</td>
+      </tr>
+      <tr class="odd">
+        <td>Quer testar e medir resultados</td>
+        <td>Experimentação</td>
+      </tr>
+      <tr class="even">
+        <td>Precisa validar com arquivos e fontes</td>
+        <td>Recursos Externos</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr />
+  <h2 id="dicas-gerais-do-professor">💡 Dicas Gerais do Professor</h2>
+  <ol type="1">
+    <li><strong>Comece simples:</strong> use <em>Zero-Shot</em> para testar
+      o comportamento inicial.<br />
+    </li>
+    <li><strong>Adicione estrutura:</strong> com <em>Instruction</em> e
+      <em>Formatting</em>, ganhe controle.<br />
+    </li>
+    <li><strong>Refine pelo contexto:</strong> use <em>Priming</em> ou
+      <em>Role</em> para adequar o tom.<br />
+    </li>
+    <li><strong>Pense em processos:</strong> combine técnicas em fluxos
+      lógicos.<br />
+    </li>
+    <li><strong>Valide e experimente:</strong> teste múltiplas versões e
+      registre resultados.<br />
+    </li>
+    <li><strong>Sempre cite fontes:</strong> use <em>RAG</em> e <em>Recursos
+        Externos</em> para basear respostas em fatos.<br />
+    </li>
+    <li><strong>Reflita e melhore:</strong> finalize com <em>self-reflexive</em>
+      ou <em>Meta Prompting</em>.</li>
+  </ol>
+  <hr />
+  <h2 id="estrutura-mestre-prompt-profissional-completo">🧩 Estrutura
+    Mestre – Prompt Profissional Completo</h2>
+  <div class="sourceCode" id="cb1">
+    <pre
+      class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 🎭 Contexto e Papel</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Você é {função/cargo}.  </span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Seu objetivo é {meta institucional}.  </span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Público-alvo: {tipo de leitor}.</span>
@@ -483,17 +742,19 @@ class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb1-1"><
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Raciocine passo a passo.  </span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Consulte fontes (RAG) ou aja (ReAct).  </span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Gere a resposta.  </span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Revise o texto conforme critérios institucionais (Reflexive).</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Revise o texto conforme critérios institucionais (self-reflexive).</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu"># 🔁 Melhoria Contínua</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Explique como o prompt poderia ser otimizado (Meta Prompting).</span></code></pre></div>
-<hr />
-<h2 id="frase-final">🧠 Frase Final</h2>
-<blockquote>
-<p>“A força da IA está no prompt, mas o poder do servidor público está
-em saber <strong>planejar, testar e combinar</strong> prompts com
-propósito.”</p>
-</blockquote>
-<hr />
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Explique como o prompt poderia ser otimizado (Meta Prompting).</span></code></pre>
+  </div>
+  <hr />
+  <h2 id="frase-final">🧠 Frase Final</h2>
+  <blockquote>
+    <p>“A força da IA está no prompt, mas o poder do servidor público está
+      em saber <strong>planejar, testar e combinar</strong> prompts com
+      propósito.”</p>
+  </blockquote>
+  <hr />
 </body>
+
 </html>
