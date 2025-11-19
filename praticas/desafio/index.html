@@ -1520,6 +1520,15 @@
         margin-bottom: 1rem;
         display: inline-block;
     }
+
+    .data-link {
+        color: #3B82F6;
+        text-decoration: underline;
+    }
+
+    .data-link:hover {
+        color: #1D4ED8;
+    }
 </style>
 
 <main class="container mx-auto p-4 md:p-8 max-w-6xl">
@@ -1546,6 +1555,7 @@
                     Claude).</li>
                 <li><span class="font-semibold">Tempo:</span> 3 Horas de execução + 1 Hora de apresentações.
                 </li>
+                <li><span class="font-semibold">Dados:</span> Utilize o <a href="http://dados.recife.pe.gov.br/" target="_blank" class="data-link">Portal de Dados Abertos do Recife</a></li>
             </ul>
         </div>
         <div class="bg-white p-6 rounded-lg shadow border-l-4 border-green-500">
@@ -1609,35 +1619,27 @@
         O professor distribuirá uma missão para cada grupo ou permitirá a escolha. Clique para ver os detalhes.
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <button id="btn-missao-1" data-mission="1"
             class="mission-card border-2 border-transparent text-left bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-            <span class="text-2xl block mb-2">🔴</span>
-            <h4 class="text-xl font-semibold text-gray-900 mb-1">Missão 01</h4>
-            <p class="font-medium text-blue-700">O Dilema da Merenda</p>
-            <p class="text-sm text-gray-600 mt-2">Crise de gestão e logística na entrega da merenda escolar no
-                interior.</p>
-        </button>
-        <button id="btn-missao-2" data-mission="2"
-            class="mission-card border-2 border-transparent text-left bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
             <span class="text-2xl block mb-2">🔵</span>
-            <h4 class="text-xl font-semibold text-gray-900 mb-1">Missão 02</h4>
+            <h4 class="text-xl font-semibold text-gray-900 mb-1">Missão 01</h4>
             <p class="font-medium text-blue-700">Operação Trânsito Zero</p>
             <p class="text-sm text-gray-600 mt-2">Plano de "Urbanismo Tático" de baixo custo para reduzir
                 acidentes com ciclistas.</p>
         </button>
-        <button id="btn-missao-3" data-mission="3"
+        <button id="btn-missao-2" data-mission="2"
             class="mission-card border-2 border-transparent text-left bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
             <span class="text-2xl block mb-2">🟢</span>
-            <h4 class="text-xl font-semibold text-gray-900 mb-1">Missão 03</h4>
+            <h4 class="text-xl font-semibold text-gray-900 mb-1">Missão 02</h4>
             <p class="font-medium text-blue-700">Guerra às Arboviroses</p>
             <p class="text-sm text-gray-600 mt-2">Ação conjunta de Saúde e Limpeza Urbana contra surto de
                 Dengue/Zika.</p>
         </button>
-        <button id="btn-missao-4" data-mission="4"
+        <button id="btn-missao-3" data-mission="3"
             class="mission-card border-2 border-transparent text-left bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
             <span class="text-2xl block mb-2">🟠</span>
-            <h4 class="text-xl font-semibold text-gray-900 mb-1">Missão 04</h4>
+            <h4 class="text-xl font-semibold text-gray-900 mb-1">Missão 03</h4>
             <p class="font-medium text-blue-700">Inverno Seguro</p>
             <p class="text-sm text-gray-600 mt-2">Priorização de obras de contenção com orçamento limitado e
                 risco de chuvas.</p>
@@ -1748,62 +1750,52 @@
 
         const missions = {
             "1": {
-                title: "🔴 Missão 01: O Dilema da Merenda",
-                context: "O Governo enfrenta uma crise de imagem e gestão. As escolas do interior relatam atrasos sistemáticos na entrega da merenda escolar. A imprensa cobra respostas e o Governador exige um plano em 24h.",
-                challenge: [
-                    "<strong>Diagnosticar</strong> as causas prováveis (logística, contratual, climática).",
-                    "<strong>Propor</strong> um plano de ação imediato e um estrutural.",
-                    "<strong>Redigir</strong> um Parecer Técnico (1 pág) e um Resumo Cidadão."
-                ],
-                focus: "<em>Chain of Thought</em> para desdobrar a complexidade logística."
-            },
-            "2": {
-                title: "🔵 Missão 02: Operação Trânsito Zero",
+                title: "🔵 Missão 01: Operação Trânsito Zero",
                 context: "Aumento drástico de acidentes com ciclistas e pedestres. A CTTU precisa de um plano de 'Urbanismo Tático' (baixo custo/alto impacto) para apresentar ao Conselho Municipal.",
-                data: [
-                    "`acidentes-de-transito-com-vitimas-2023`",
-                    "`ciclovias-ciclofaixas-estacoes-de-aluguel-de-bikes-e-rotas`",
-                    "`velocidade-das-vias-quantitativo-por-velocidade-media`",
-                    "`registro-das-infracoes-de-transito`"
+                dataLinks: [
+                    { name: "Acidentes de trânsito com vítimas", url: "http://dados.recife.pe.gov.br/dataset/acidentes-de-transito-com-vitimas" },
+                    { name: "Ciclovias, ciclofaixas e estações de bikes", url: "http://dados.recife.pe.gov.br/dataset/ciclovias-ciclofaixas-estacoes-de-aluguel-de-bikes-e-rotas" },
+                    { name: "Velocidade das vias", url: "http://dados.recife.pe.gov.br/dataset/velocidade-das-vias-quantitativo-por-velocidade-media" },
+                    { name: "Registro de infrações de trânsito", url: "http://dados.recife.pe.gov.br/dataset/registro-das-infracoes-de-transito" }
                 ],
                 challenge: [
-                    "<strong>Diagnóstico:</strong> Simular análise de dados cruzando locais de acidentes x excesso de velocidade.",
-                    "<strong>Solução:</strong> Propor intervenções físicas rápidas.",
+                    "<strong>Diagnóstico:</strong> Analisar dados de acidentes cruzando com locais de excesso de velocidade e infraestrutura cicloviária.",
+                    "<strong>Solução:</strong> Propor intervenções físicas rápidas e de baixo custo (sinalização, redutores, pintura).",
                     "<strong>Entrega:</strong> Nota Técnica justificando redução de velocidade + Post para Redes Sociais."
                 ],
-                focus: "<em>Data Analysis Prompting</em> (simulação de análise de dados)."
+                focus: "<em>Data Analysis Prompting</em> com <em>Chain of Thought</em> para análise espacial e priorização."
             },
-            "3": {
-                title: "🟢 Missão 03: Guerra às Arboviroses",
+            "2": {
+                title: "🟢 Missão 02: Guerra às Arboviroses",
                 context: "Risco iminente de surto de Dengue/Zika. O Secretário de Saúde suspeita que o problema está no acúmulo de lixo em áreas vulneráveis e pede uma ação conjunta com a Emlurb (Limpeza Urbana).",
-                data: [
-                    "`casos-de-dengue-zika-e-chikungunya`",
-                    "`vigilancia-de-zoonoses`",
-                    "`destinacao-de-residuos-solidos` ou `roteiro-de-coleta`",
-                    "`relacao-das-favelas-corticos-e-loteamentos-irregulares`"
+                dataLinks: [
+                    { name: "Casos de dengue, zika e chikungunya", url: "http://dados.recife.pe.gov.br/dataset/casos-de-dengue-zika-e-chikungunya" },
+                    { name: "Vigilância de zoonoses", url: "http://dados.recife.pe.gov.br/dataset/vigilancia-de-zoonoses" },
+                    { name: "Destinação de resíduos sólidos", url: "http://dados.recife.pe.gov.br/dataset/destinacao-de-residuos-solidos" },
+                    { name: "Favelas, cortiços e loteamentos irregulares", url: "http://dados.recife.pe.gov.br/dataset/relacao-das-favelas-corticos-e-loteamentos-irregulares" }
                 ],
                 challenge: [
-                    "<strong>Correlação:</strong> Usar a IA para raciocinar sobre a sobreposição geográfica (Doença x Lixo x Vulnerabilidade).",
-                    "<strong>Ação:</strong> Planejar um 'Dia D' (Saúde + Limpeza).",
+                    "<strong>Correlação:</strong> Usar a IA para identificar sobreposição geográfica (casos de doença × coleta de lixo × áreas vulneráveis).",
+                    "<strong>Ação:</strong> Planejar um 'Dia D' intersetorial (Saúde + Limpeza Urbana).",
                     "<strong>Entrega:</strong> Plano de Ação Intersetorial + Roteiro para Carro de Som (linguagem popular)."
                 ],
-                focus: "<em>CoT</em> para planejamento logístico e <em>Style Transfer</em> (técnico para popular)."
+                focus: "<em>Chain of Thought</em> para planejamento logístico e <em>Style Transfer</em> (técnico para popular)."
             },
-            "4": {
-                title: "🟠 Missão 04: Inverno Seguro",
+            "3": {
+                title: "🟠 Missão 03: Inverno Seguro",
                 context: "Previsão de chuvas fortes. Orçamento limitado. O Prefeito precisa decidir quais obras de contenção priorizar para evitar tragédias, focando em áreas com escolas e postos de saúde.",
-                data: [
-                    "`registro-de-atendimentos-da-defesa-civil`",
-                    "`obras-publicas`",
-                    "`unidades-educacionais-no-municipio`",
-                    "`despesas-orcamentarias`"
+                dataLinks: [
+                    { name: "Registro de atendimentos da Defesa Civil", url: "http://dados.recife.pe.gov.br/dataset/registro-de-atendimentos-da-defesa-civil" },
+                    { name: "Obras públicas", url: "http://dados.recife.pe.gov.br/dataset/obras-publicas" },
+                    { name: "Unidades educacionais no município", url: "http://dados.recife.pe.gov.br/dataset/unidades-educacionais-no-municipio" },
+                    { name: "Equipamentos de saúde", url: "http://dados.recife.pe.gov.br/dataset/equipamentos-de-saude" }
                 ],
                 challenge: [
-                    "<strong>Priorização:</strong> Criar uma 'Matriz de Decisão' na IA cruzando histórico de riscos e presença de equipamentos públicos.",
+                    "<strong>Priorização:</strong> Criar uma 'Matriz de Decisão' cruzando histórico de riscos com presença de equipamentos públicos críticos.",
                     "<strong>Justificativa:</strong> Redigir justificativa legal/orçamentária para priorização das obras.",
                     "<strong>Entrega:</strong> Matriz de Priorização + FAQ (Perguntas Frequentes) para o site da Prefeitura."
                 ],
-                focus: "<em>Role Prompting</em> (Jurídico/Financeiro) e <em>Logical Prompting</em>."
+                focus: "<em>Role Prompting</em> (Jurídico/Financeiro) e <em>Logical Prompting</em> para decisões baseadas em critérios."
             }
         };
 
@@ -1823,12 +1815,19 @@
                     placeholder.style.display = 'none';
                 }
 
-                let dataListHtml = '';
-                if (data.data) {
-                    dataListHtml = `
-                        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Dados de Referência (Simulados):</h4>
-                        <div class="flex flex-wrap gap-2">
-                            ${data.data.map(item => `<code class="text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded">${item}</code>`).join('')}
+                let dataLinksHtml = '';
+                if (data.dataLinks) {
+                    dataLinksHtml = `
+                        <h4 class="text-lg font-semibold text-gray-800 mt-4 mb-2">📊 Dados de Referência (Portal de Dados Abertos do Recife):</h4>
+                        <div class="space-y-2">
+                            ${data.dataLinks.map(item => `
+                                <div class="flex items-center">
+                                    <span class="text-blue-500 mr-2">🔗</span>
+                                    <a href="${item.url}" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline">
+                                        ${item.name}
+                                    </a>
+                                </div>
+                            `).join('')}
                         </div>
                     `;
                 }
@@ -1838,13 +1837,13 @@
                         <h3 class="text-3xl font-bold text-blue-800 mb-3">${data.title}</h3>
                         <p class="text-lg text-gray-700 mb-4">${data.context}</p>
                         <hr class="my-4">
-                        <h4 class="text-xl font-semibold text-gray-800 mb-3">O Desafio:</h4>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-3">🎯 O Desafio:</h4>
                         <ol class="list-decimal list-outside pl-5 space-y-2 text-gray-700 mb-4">
                             ${data.challenge.map(item => `<li>${item}</li>`).join('')}
                         </ol>
-                        ${dataListHtml}
+                        ${dataLinksHtml}
                         <div class="mt-6 bg-blue-50 p-4 rounded-lg">
-                            <h4 class="text-lg font-semibold text-blue-700 mb-1">Técnica em Foco:</h4>
+                            <h4 class="text-lg font-semibold text-blue-700 mb-1">🔍 Técnica em Foco:</h4>
                             <p class="text-blue-900">${data.focus}</p>
                         </div>
                     </div>
