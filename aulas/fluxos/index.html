@@ -1,0 +1,2141 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../lgpd2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Fluxos - Engenharia de Prompt para servidores públicos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modulo-complementar-fluxos-de-prompts" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Engenharia de Prompt para servidores públicos" class="md-header__button md-logo" aria-label="Engenharia de Prompt para servidores públicos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Engenharia de Prompt para servidores públicos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fluxos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Engenharia de Prompt para servidores públicos" class="md-nav__button md-logo" aria-label="Engenharia de Prompt para servidores públicos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Engenharia de Prompt para servidores públicos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧩 Engenharia de Prompt para Servidores Públicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aulas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aulas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fluxos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-do-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Objetivo do Módulo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceito-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📘 Conceito Central
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-conceitual-pipeline-de-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Exemplo Conceitual — Pipeline de Prompting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-pratico-fluxo-para-elaboracao-de-relatorio-tecnico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 Exemplo Prático — Fluxo para Elaboração de Relatório Técnico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧭 Exemplo Prático — Fluxo para Elaboração de Relatório Técnico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapa-1-coleta-de-informacoes-instruction-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 1: Coleta de informações (Instruction Prompting)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-2-analise-tecnica-chain-of-thought" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 2: Análise técnica (Chain of Thought)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-3-geracao-do-relatorio-formatting-priming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 3: Geração do relatório (Formatting + Priming)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-4-revisao-e-validacao-self-reflexive-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 4: Revisão e validação (self-reflexive Prompting)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-didatica-recomendada-para-aula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ Estrutura Didática Recomendada para Aula
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dica-do-professor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Dica do Professor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos-de-fluxos-por-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Modelos de Fluxos por Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atividade-proposta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧰 Atividade Proposta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dica-do-professor-pos-atividade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Dica do Professor (pós-atividade)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sugestao-de-extensao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Sugestão de Extensão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintese-visual-para-slide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Síntese Visual (para Slide)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔑 Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lgpd2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LGPD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompts Básicos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prompts Básicos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/0_zero_shot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zero Shot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/1_few_shot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Few Shot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/2_instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instruction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/3_formatting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Formatting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/4_priming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompts Avançados
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prompts Avançados
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/6_meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta Prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/7_role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Role
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/8_cot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chain of Thought
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/9_reflexive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflexive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/10_rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modelos/11_ReAct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ReAct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercicios
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exercicios
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompts Básicos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prompts Básicos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/0_zero_shot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zero Shot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/1_few_shot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Few Shot
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/2_instruction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instruction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/3_formatting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Formatting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/4_priming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompts Avançados
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Prompts Avançados
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/6_meta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta Prompt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/7_role/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Role
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/8_cot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chain of Thought
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/9_reflexive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflexive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/10_rag/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RAG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercicios/11_ReAct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ReAct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praticas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Praticas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../praticas/pratica1_casos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praticas Básicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../praticas/pratica2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Praticas Avançadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../praticas/desafio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desafio Final
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../referencias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Referencias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-do-modulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Objetivo do Módulo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conceito-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📘 Conceito Central
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-conceitual-pipeline-de-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Exemplo Conceitual — Pipeline de Prompting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-pratico-fluxo-para-elaboracao-de-relatorio-tecnico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧭 Exemplo Prático — Fluxo para Elaboração de Relatório Técnico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧭 Exemplo Prático — Fluxo para Elaboração de Relatório Técnico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etapa-1-coleta-de-informacoes-instruction-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 1: Coleta de informações (Instruction Prompting)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-2-analise-tecnica-chain-of-thought" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 2: Análise técnica (Chain of Thought)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-3-geracao-do-relatorio-formatting-priming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 3: Geração do relatório (Formatting + Priming)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etapa-4-revisao-e-validacao-self-reflexive-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Etapa 4: Revisão e validação (self-reflexive Prompting)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-didatica-recomendada-para-aula" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ Estrutura Didática Recomendada para Aula
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dica-do-professor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Dica do Professor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos-de-fluxos-por-finalidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Modelos de Fluxos por Finalidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atividade-proposta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧰 Atividade Proposta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dica-do-professor-pos-atividade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Dica do Professor (pós-atividade)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sugestao-de-extensao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Sugestão de Extensão
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sintese-visual-para-slide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 Síntese Visual (para Slide)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔑 Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="modulo-complementar-fluxos-de-prompts">🧠 Módulo Complementar: Fluxos de Prompts</h1>
+<p><strong>Tema:</strong> Combinação e encadeamento de múltiplos prompts
+<strong>Autor:</strong> Adriano Marabuco</p>
+<hr />
+<h2 id="objetivo-do-modulo">🎯 Objetivo do Módulo</h2>
+<p>Ensinar os alunos a <strong>construir fluxos de prompts</strong> — sequências lógicas de interações entre humano e IA — para resolver tarefas complexas ou multidimensionais.</p>
+<blockquote>
+<p>💬 É o momento em que o servidor deixa de “fazer perguntas” e passa a <strong>projetar conversas inteligentes</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="conceito-central">📘 Conceito Central</h2>
+<p>Um <strong>fluxo de prompts</strong> é um <em>processo conversacional planejado</em>, composto por <strong>etapas interdependentes</strong>, onde cada resposta da IA serve de <strong>entrada (contexto)</strong> para a próxima tarefa.</p>
+<p>Isso permite:</p>
+<ul>
+<li>Dividir tarefas complexas em partes menores e controláveis;</li>
+<li>Garantir coerência entre as etapas (análise → geração → revisão);</li>
+<li>Reutilizar resultados anteriores como base de raciocínio;</li>
+<li>Aumentar a confiabilidade e o controle sobre o resultado final.</li>
+</ul>
+<hr />
+<h2 id="exemplo-conceitual-pipeline-de-prompting">🧩 Exemplo Conceitual — <em>Pipeline de Prompting</em></h2>
+<pre><code>[Prompt 1: Contextualização e Coleta de Dados] 
+        ↓
+[Prompt 2: Análise e Classificação da Informação]
+        ↓
+[Prompt 3: Síntese e Redação do Documento Final]
+        ↓
+[Prompt 4: Revisão e Padronização (self-reflexive ou Meta Prompt)]
+</code></pre>
+<p>💡 Cada etapa pode empregar uma técnica diferente:</p>
+<ul>
+<li>Zero-Shot / Instruction no início (para contextualizar);</li>
+<li>Chain of Thought ou Role para análise;</li>
+<li>Formatting ou Priming na redação;</li>
+<li>self-reflexive ou Meta Prompt para revisão final.</li>
+</ul>
+<hr />
+<h2 id="exemplo-pratico-fluxo-para-elaboracao-de-relatorio-tecnico">🧭 Exemplo Prático — <em>Fluxo para Elaboração de Relatório Técnico</em></h2>
+<h3 id="etapa-1-coleta-de-informacoes-instruction-prompting">Etapa 1: Coleta de informações (<em>Instruction Prompting</em>)</h3>
+<blockquote>
+<p>“Liste os principais problemas encontrados durante a vistoria de obras do mês de setembro.”</p>
+</blockquote>
+<h3 id="etapa-2-analise-tecnica-chain-of-thought">Etapa 2: Análise técnica (<em>Chain of Thought</em>)</h3>
+<blockquote>
+<p>“Analise os problemas listados e classifique-os em estruturais, elétricos e administrativos, explicando as causas.”</p>
+</blockquote>
+<h3 id="etapa-3-geracao-do-relatorio-formatting-priming">Etapa 3: Geração do relatório (<em>Formatting + Priming</em>)</h3>
+<blockquote>
+<p>“Redija um relatório técnico para a diretoria, com linguagem formal, seguindo o formato: Introdução / Diagnóstico / Recomendações.”</p>
+</blockquote>
+<h3 id="etapa-4-revisao-e-validacao-self-reflexive-prompting">Etapa 4: Revisão e validação (<em>self-reflexive Prompting</em>)</h3>
+<blockquote>
+<p>“Revise o relatório anterior, verificando clareza, coerência técnica e tom institucional.”</p>
+</blockquote>
+<hr />
+<h2 id="estrutura-didatica-recomendada-para-aula">⚙️ Estrutura Didática Recomendada para Aula</h2>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Conteúdo</th>
+<th>Estratégia Didática</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Introdução</strong></td>
+<td>O que é um fluxo de prompts</td>
+<td>Exposição dialogada + diagrama visual</td>
+</tr>
+<tr>
+<td><strong>2. Demonstração</strong></td>
+<td>Exemplo prático passo a passo (como o acima)</td>
+<td>Demonstração ao vivo no ChatGPT ou slides</td>
+</tr>
+<tr>
+<td><strong>3. Oficina em duplas</strong></td>
+<td>Alunos projetam um fluxo de 3–5 etapas para um caso real do órgão</td>
+<td>Trabalho prático guiado</td>
+</tr>
+<tr>
+<td><strong>4. Revisão coletiva</strong></td>
+<td>Discussão sobre o que funcionou e o que pode ser ajustado</td>
+<td>Avaliação participativa</td>
+</tr>
+<tr>
+<td><strong>5. Reflexão final</strong></td>
+<td>Comparação entre pedir “tudo de uma vez” e dividir em etapas</td>
+<td>Debate e fechamento cognitivo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="dica-do-professor">💡 Dica do Professor</h2>
+<blockquote>
+<p>O segredo dos fluxos de prompts é <strong>ensinar o raciocínio procedural</strong>.
+Mostre aos alunos que a IA pensa melhor <strong>quando a tarefa é bem sequenciada</strong>.
+Estimule-os a usar verbos de ação (“analise”, “sintetize”, “verifique”) e a <strong>encadear etapas com coerência</strong>.</p>
+<p>Oriente-os a testar fluxos curtos (3 etapas) antes de construir pipelines maiores.</p>
+</blockquote>
+<hr />
+<h2 id="modelos-de-fluxos-por-finalidade">🧠 Modelos de Fluxos por Finalidade</h2>
+<table>
+<thead>
+<tr>
+<th>Finalidade</th>
+<th>Estrutura de Fluxo</th>
+<th>Técnicas Indicadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Análise Técnica</strong></td>
+<td>Coleta → Raciocínio → Conclusão</td>
+<td>Instruction + CoT + Formatting</td>
+</tr>
+<tr>
+<td><strong>Redação Oficial</strong></td>
+<td>Contexto → Redação → Revisão</td>
+<td>Priming + Formatting + self-reflexive</td>
+</tr>
+<tr>
+<td><strong>Tomada de Decisão</strong></td>
+<td>Diagnóstico → Avaliação → Escolha → Justificativa</td>
+<td>CoT + Role + ReAct</td>
+</tr>
+<tr>
+<td><strong>Geração de Parecer</strong></td>
+<td>Leitura de documentos → Interpretação → Conclusão fundamentada</td>
+<td>RAG + CoT + Meta Prompt</td>
+</tr>
+<tr>
+<td><strong>Auditoria ou Controle</strong></td>
+<td>Consulta → Verificação → Relatório</td>
+<td>RAG + ReAct + Formatting</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="atividade-proposta">🧰 Atividade Proposta</h2>
+<ol>
+<li>Divida os alunos em grupos e atribua uma tarefa real (ex: elaboração de parecer, relatório ou despacho).</li>
+<li>Cada grupo deverá <strong>projetar um fluxo de prompts</strong> com 3 a 5 etapas.</li>
+<li>Teste o fluxo na prática (um aluno digita, outro observa o raciocínio).</li>
+<li>
+<p>Registrem as respostas e discutam:</p>
+</li>
+<li>
+<p>Qual etapa mais influenciou o resultado final?</p>
+</li>
+<li>O que aconteceria se pulassem uma fase?</li>
+</ol>
+<hr />
+<h2 id="dica-do-professor-pos-atividade">💡 Dica do Professor (pós-atividade)</h2>
+<blockquote>
+<p>Avalie o <strong>grau de dependência entre as etapas</strong> — quanto mais uma resposta servir de base para a próxima, mais o aluno entendeu o conceito de <em>encadeamento cognitivo</em>.</p>
+<p>Mostre que essa abordagem se aproxima de <strong>fluxos administrativos reais</strong> (coleta de dados → análise → decisão → despacho).</p>
+<p>Conclua reforçando: “Engenheiro de Prompt não escreve perguntas — <strong>projeta processos</strong>.”</p>
+</blockquote>
+<hr />
+<h2 id="sugestao-de-extensao">📚 Sugestão de Extensão</h2>
+<ul>
+<li>Monte um <strong>“Laboratório de Fluxos”</strong>: os alunos podem criar pipelines prontos para o órgão (ex: fluxo para responder demandas de ouvidoria, elaborar relatórios de fiscalização, revisar contratos, etc.).</li>
+<li>Esses fluxos podem ser transformados em <strong>“modelos prontos”</strong> para uso cotidiano no ChatGPT Enterprise ou em sistemas internos.</li>
+</ul>
+<hr />
+<h2 id="sintese-visual-para-slide">🧩 Síntese Visual (para Slide)</h2>
+<pre><code>         [Prompt 1] → [Prompt 2] → [Prompt 3] → [Prompt 4]
+           Contexto       Análise       Geração      Revisão
+</code></pre>
+<blockquote>
+<p>Cada etapa é um <strong>bloco cognitivo</strong>.
+O fluxo inteiro forma um <strong>processo inteligente</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="conclusao">🔑 Conclusão</h2>
+<p>O módulo de <strong>Fluxos de Prompts</strong> transforma o aluno de executor em <strong>arquiteto de interações</strong>.
+Ele aprende a:</p>
+<ul>
+<li>Dividir tarefas complexas em etapas lógicas;</li>
+<li>Escolher a técnica ideal para cada fase;</li>
+<li>Garantir que o raciocínio da IA acompanhe o raciocínio humano;</li>
+<li>Produzir resultados <strong>padronizados, verificáveis e reusáveis</strong> no ambiente público.</li>
+</ul>
+<p>Referências:</p>
+<ul>
+<li>LangChain Docs. <em>Chains and Prompt Pipelines.</em><br />
+  🔗 https://python.langchain.com/docs/concepts/#chains  </li>
+<li>IBM Developer. <em>Prompt Chaining com LangChain.</em><br />
+  🔗 https://developer.ibm.com/tutorials/langchain-prompt-chaining/</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
