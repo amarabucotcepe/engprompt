@@ -20,14 +20,16 @@ O **curso Engenharia de Prompt para Servidores Públicos** foi desenvolvido para
 
 ## 🧱 Estrutura do Curso
 
-O conteúdo é dividido em **módulos progressivos**, permitindo que o aluno avance da compreensão básica até técnicas avançadas de engenharia de prompt.
+O conteúdo é dividido em **módulos progressivos**. O aluno parte da compreensão básica, chega às técnicas de engenharia de prompt e vai além: **engenharia de contexto** e **fluxos de trabalho com agentes de IA**.
 
 1. Inteligência Artificial Generativa
 2. Privacidade e IA
 3. Prompts
-4. Práticas de prompts básicos
-5. Práticas de prompts avançados
-6. Projeto Final
+4. [Prática 1 — Engenharia de Prompt](praticas/pratica1_engenharia_de_prompt.md)
+5. [Prática 2 — Engenharia de Contexto e Fluxos com Agentes](praticas/pratica2_contexto_e_agentes.md)
+6. [Desafio Final (opcional, pós-curso)](praticas/desafio_final.md)
+
+➡️ Veja a [Trilha de Práticas](praticas/index.md) para entender como funcionam os encontros e as entregas.
 
 ---
 
@@ -40,6 +42,8 @@ Durante o curso, o servidor público desenvolverá competências essenciais para
 - 🛡️ **Conformidade legal:** domínio das boas práticas em LGPD e ética digital.  
 - 🔍 **Pensamento crítico:** avaliação e refinamento de respostas da IA.  
 - 💬 **Comunicação com IA:** uso de linguagem natural e técnica em prompts.  
+- 📚 **Engenharia de contexto:** seleção de fontes, instruções persistentes e memória para respostas confiáveis.  
+- 🤖 **Fluxos com agentes:** desenho de processos em etapas com IA, com o humano no circuito.  
 
 ---
 
