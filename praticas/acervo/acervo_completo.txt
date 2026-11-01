@@ -1,0 +1,80 @@
+Curso Inteligência Artificial no Serviço Público · Prática 2 · ACERVO COMPLETO (F1–F10) · DADOS FICTÍCIOS
+
+F1 — Extrato do contrato de manutenção corretiva de vias (tapa-buracos)
+
+Objeto: serviço contínuo de manutenção corretiva de pavimento, com equipe e material.
+Vigência: 12 meses, encerrando em 30 dias.
+Valor anual: R$ 2.400.000,00.
+Cláusula 5.2: o edital prevê a prorrogação, nos termos da lei.
+Meta do IMR (Instrumento de Medição de Resultado): 90% das ordens de serviço (OS) atendidas em até 72 h.
+Penalidade do IMR: abaixo de 80%, aplica-se uma glosa de 5% na fatura do mês.
+
+----------
+
+F2 — Relatório do fiscal do contrato (últimos 6 meses)
+
+% de OS atendidas em até 72 h:
+Jan 92% | Fev 91% | Mar 88% | Abr 74% | Mai 71% | Jun 79%
+
+Média do semestre: 82,5%. Houve glosa em abril, maio e junho.
+A empresa alega chuvas acima da média em abril e maio e atraso do fornecedor de massa asfáltica.
+O fiscal confirma as chuvas pelo boletim da Defesa Civil. Registra, porém, que em junho, sem chuvas relevantes, o índice ficou em 79%.
+
+----------
+
+F3 — Pesquisa de preços (Setor de Compras)
+
+Preço contratado: R$ 118/m².
+Mediana de mercado (3 orçamentos + painel de preços): R$ 126/m².
+O preço contratado está 6,3% abaixo do mercado.
+Uma nova licitação levaria cerca de 5 meses para ser concluída.
+
+----------
+
+F4 — Ouvidoria
+
+Manifestações sobre buracos: 140 no 1º trimestre e 310 no 2º trimestre (+121%).
+
+----------
+
+F5 — Base legal (Lei nº 14.133/2021, art. 107)
+
+"Os contratos de serviços e fornecimentos contínuos poderão ser prorrogados sucessivamente, respeitada a vigência máxima decenal, desde que haja previsão em edital e que a autoridade competente ateste que as condições e os preços permanecem vantajosos para a Administração, permitida a negociação com o contratado ou a extinção contratual sem ônus para qualquer das partes."
+
+----------
+
+F6 — Carta de Serviços ao Cidadão (versão 2024)
+
+"Reparo de buraco em via pública: prazo de atendimento de até 72 horas após o registro. Canais: aplicativo, telefone 156 e site. O cidadão recebe número de protocolo e pode acompanhar o andamento."
+
+----------
+
+F7 — Perguntas Frequentes do site (publicadas em 2019, nunca atualizadas)
+
+"O reparo de buracos é realizado em até 10 dias úteis. Solicitações somente por telefone."
+
+----------
+
+F8 — Planilha de ordens de serviço (exportação completa: 4.312 linhas; trecho abaixo)
+
+OS;Solicitante;CPF;Telefone;Endereço;Canal;Status;Situação
+2024-0915;Fulano de Tal;000.000.000-01;(00) 90000-0001;Rua Exemplo, 100;Aplicativo;Atendida;atendida em 96 h
+2024-0918;Beltrana de Souza;000.000.000-02;(00) 90000-0002;Rua Modelo, 45;Telefone 156;Atendida;atendida em 40 h
+2024-0922;Cicrano Alves;000.000.000-03;(00) 90000-0003;Travessa Fictícia, 12;Site;Em execução;equipe agendada, aberta há 4 dias
+2024-0925;Fulana Pereira;000.000.000-04;(00) 90000-0004;Avenida Hipotética, 300;Aplicativo;Atendida;atendida em 70 h
+2024-0927;Beltrano Costa;000.000.000-05;(00) 90000-0005;Rua das Amostras, 7;Aplicativo;Aberta;aberta há 5 dias, sem equipe designada
+2024-0928;Cicrana Lima;000.000.000-06;(00) 90000-0006;Avenida Hipotética, 310;Telefone 156;Cancelada;duplicada da OS 2024-0925
+2024-0931;Fulano Ribeiro;000.000.000-07;(00) 90000-0007;Rua Modelo, 210;Aplicativo;Aberta;aberta há 9 dias, aguardando material
+2024-0933;Beltrana Nunes;000.000.000-08;(00) 90000-0008;Travessa Fictícia, 88;Site;Atendida;atendida em 52 h
+
+----------
+
+F9 — Manual de Redação da Prefeitura (trecho)
+
+"Respostas ao cidadão: tratamento por 'você', frases curtas, sem siglas internas, sempre com número de protocolo e próximo passo."
+
+----------
+
+F10 — Coluna de opinião de jornal local
+
+"A Prefeitura abandonou as ruas. A empresa contratada é um desastre e todos sabem que há favorecimento."

@@ -1,0 +1,8 @@
+Curso Inteligência Artificial no Serviço Público · Prática 2 · DADOS FICTÍCIOS
+
+F3 — Pesquisa de preços (Setor de Compras)
+
+Preço contratado: R$ 118/m².
+Mediana de mercado (3 orçamentos + painel de preços): R$ 126/m².
+O preço contratado está 6,3% abaixo do mercado.
+Uma nova licitação levaria cerca de 5 meses para ser concluída.
