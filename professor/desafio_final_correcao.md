@@ -32,7 +32,7 @@ A configuração do fluxo está em [`README.md`](README.md). Use um formulário 
 Cada aluno trabalha com o **próprio município** e com dados reais, que o Gemini não consegue verificar. Por isso a correção **não confere os números em si**. Ela confere quatro coisas:
 - **Rastreabilidade:** todo número tem uma fonte citada, e a fonte é uma base pública identificável, com data.
 - **Coerência interna:** os números da nota técnica batem com o log e a peça cidadã não contradiz a nota técnica.
-- **Processo:** contexto e fluxo seguem o padrão da Prática 2.
+- **Processo:** contexto e fluxo seguem o padrão da Prática 2 (checklist do Anexo de `pratica2_correcao.md`).
 - **Proteção de dados:** só aparecem dados agregados.
 
 ### O que se espera por missão
@@ -182,7 +182,7 @@ Antes de liberar o formulário, envie duas entregas de teste.
 - Peça cidadã com siglas.
 
 **Entrega forte: nota esperada entre 8 e 10**
-- Adapte o exemplo da Central da Zeladoria (correção da Prática 2, seção 2) para a Missão 03.
+- Adapte o exemplo da Central da Ouvidoria (correção da Prática 2, Anexo) para a Missão 03.
 - Use fontes S2iD, CNES e um portal municipal fictício, todas com data.
 - Inclua uma matriz com pesos.
 - Coloque a aprovação humana antes da publicação.

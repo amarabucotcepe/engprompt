@@ -1,6 +1,6 @@
 # 🛡️ Módulo: LGPD, Ética e Privacidade no Uso de Inteligência Artificial
 
-> **Curso:** Engenharia de Prompt para Servidores Públicos
+> **Curso:** Inteligência Artificial no Serviço Público
 > **Autor:** Adriano Marabuco
 > 
 

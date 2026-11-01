@@ -1,7 +1,15 @@
-site_name: Engenharia de Prompt para servidores públicos
+site_name: Inteligência Artificial no Serviço Público
 theme:
   name: material
   language: pt
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+not_in_nav: |
+  /praticas/painel.md
+  /praticas/conducao.md
 nav:
   - index.md
   - Aulas:
@@ -38,7 +46,9 @@ nav:
   - Praticas:
       - Trilha de Práticas: praticas/index.md
       - "Prática 1 — Engenharia de Prompt": praticas/pratica1_engenharia_de_prompt.md
+      - "Guia das Cartas — Prática 1": praticas/cartas_pratica1.md
       - "Prática 2 — Contexto e Agentes": praticas/pratica2_contexto_e_agentes.md
+      - "Guia das Cartas — Prática 2": praticas/cartas_pratica2.md
       - Desafio Final (opcional): praticas/desafio_final.md
   - Referencias: referencias.md     
   - Autor: autor.md 

@@ -1,6 +1,6 @@
 # 🛡️ Módulo Avançado: Engenharia de Prompt em Conformidade com a LGPD
 
-> **Curso:** Engenharia de Prompt para Servidores Públicos
+> **Curso:** Inteligência Artificial no Serviço Público
 > **Autor:** Adriano Marabuco
 > 
 

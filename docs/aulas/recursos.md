@@ -1,6 +1,6 @@
 # 🧠 Módulo: Recursos e Multimodalidade na Engenharia de Prompt
 
-> **Curso:** Engenharia de Prompt para Servidores Públicos
+> **Curso:** Inteligência Artificial no Serviço Público
 > **Autor:** Adriano Marabuco
 > 
 
