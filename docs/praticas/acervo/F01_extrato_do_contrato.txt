@@ -1,0 +1,10 @@
+Curso Inteligência Artificial no Serviço Público · Prática 2 · DADOS FICTÍCIOS
+
+F1 — Extrato do contrato de manutenção corretiva de vias (tapa-buracos)
+
+Objeto: serviço contínuo de manutenção corretiva de pavimento, com equipe e material.
+Vigência: 12 meses, encerrando em 30 dias.
+Valor anual: R$ 2.400.000,00.
+Cláusula 5.2: o edital prevê a prorrogação, nos termos da lei.
+Meta do IMR (Instrumento de Medição de Resultado): 90% das ordens de serviço (OS) atendidas em até 72 h.
+Penalidade do IMR: abaixo de 80%, aplica-se uma glosa de 5% na fatura do mês.

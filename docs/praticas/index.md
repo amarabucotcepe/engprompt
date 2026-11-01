@@ -10,23 +10,23 @@ Engenharia de Prompt          Contexto + Fluxos com Agentes           (opcional,
 
 | Etapa | Duração | Foco | Avaliação |
 | ----- | ------- | ---- | --------- |
-| [Prática 1 — Engenharia de Prompt](pratica1_engenharia_de_prompt.md) | 4 h | Zero-Shot, Instruction, Formatting, Few-Shot, Priming/Role, CoT, Reflexive, RAG/ReAct, Meta Prompt | Desafio Integrador individual (Forms + Gemini) |
-| [Prática 2 — Contexto e Agentes](pratica2_contexto_e_agentes.md) | 4 h | Seleção de fontes, instruções persistentes, memória, falhas de contexto, desenho de fluxo, multiagente, humano no circuito | Desafio Integrador individual (Forms + Gemini) |
+| [Prática 1 — Engenharia de Prompt](pratica1_engenharia_de_prompt.md) | 4 h | 4 rodadas com sorteio de técnicas (Zero-Shot, Few-Shot, Instruction, Formatting, Priming, Role, Meta Prompt, CoT, Reflexive, RAG, ReAct) contra um grupo **sem IA** | Nota por grupo em cada rodada (Forms + Gemini) |
+| [Prática 2 — Contexto e Agentes](pratica2_contexto_e_agentes.md) | 4 h | 4 rodadas com sorteio de estratégias: prompt puro × contexto (fontes, Gem/Projeto, resumo de estado) × agentes (pipeline, ferramentas, dois agentes) | Nota por grupo em cada rodada (Forms + Gemini) |
 | [Desafio Final (opcional)](desafio_final.md) | em casa | Missão aplicada ao seu município, com dados públicos | Retorno formativo opcional (Forms + Gemini) |
 
 ---
 
-## 🧩 Como funciona cada prática
+## 🎲 Como funciona cada prática
 
-1. **Blocos em grupo (não avaliados).** Exercícios curtos sobre um mesmo caso, que evolui de bloco em bloco. Errar aqui faz parte: é o momento de testar.
-2. **Desafio Integrador (individual, avaliado).** Ao final, você junta tudo o que praticou numa entrega própria.
-3. **Entrega pelo Google Forms.** O professor envia o link. O formulário coleta o seu e-mail.
-4. **Correção automática.** O Gemini avalia a entrega com a **rubrica publicada na própria prática** e envia por e-mail:
-   - a nota por critério;
-   - os pontos fortes;
-   - as sugestões de melhoria.
+Cada prática é um **experimento**: a turma descobre, com os próprios resultados, quanto a IA acrescenta ao trabalho e quanto cada técnica acrescenta à IA.
 
-   O professor revisa os casos de dúvida. Para contestar, basta responder ao e-mail.
+1. **Rodadas cronometradas em grupo.** São 4 rodadas por encontro. Em cada uma, **todos os grupos fazem a mesma tarefa** em 20 minutos, cada um com uma **carta sorteada**: uma técnica ou estratégia. Um grupo por rodada tira a carta **"Sem IA"** e faz o trabalho à mão: é a linha de base da comparação.
+2. **Rodízio.** A cada rodada as cartas mudam de grupo. Assim, o resultado de uma técnica não depende de qual grupo a usou.
+3. **Entrega pelo Google Forms.** Um envio por grupo, com o produto final e o relato de **como o grupo fez**.
+4. **Correção automática em duas partes.**
+    - **Qualidade (0–8):** o Gemini lê só o produto, **às cegas**: não sabe a carta nem se houve IA.
+    - **Aderência à carta (0–2):** o Gemini identifica as técnicas pelo relato, sem saber a carta, e a planilha compara com a carta sorteada.
+5. **Revelação.** Três saídas aparecem sem identificação, a turma vota na melhor e tenta adivinhar a técnica. Depois vem o quadro da rodada: carta, nota e tempo de cada grupo. No fim do dia, o quadro mostra a média de cada técnica contra o "Sem IA".
 
 > 💡 A correção é, ela mesma, um **fluxo com agente**: formulário → Gemini → planilha → e-mail, com o professor no circuito. Na Prática 2 você vai analisar esse fluxo por dentro.
 
@@ -34,7 +34,7 @@ Engenharia de Prompt          Contexto + Fluxos com Agentes           (opcional,
 
 ## 📏 Rubrica-base
 
-Toda rubrica soma **10 pontos** e tem sempre um critério de **LGPD e ética**. Os critérios são escritos para serem **verificáveis**, por exemplo "usa dados de ≥ 2 fontes" ou "há aprovação humana antes do envio". Assim, a correção automática fica consistente e você sabe exatamente o que é esperado.
+A nota de cada rodada soma **10 pontos** (8 de qualidade + 2 de aderência à carta), e a rubrica de qualidade tem sempre um critério de **LGPD e ética**. Os critérios são escritos para serem **verificáveis**, por exemplo "usa dados de ≥ 2 fontes" ou "há aprovação humana antes do envio". Assim, a correção automática fica consistente e você sabe exatamente o que é esperado.
 
 ---
 

@@ -1,16 +1,16 @@
-# 🧩 Engenharia de Prompt para Servidores Públicos
+# 🧩 Inteligência Artificial no Serviço Público
 
 > **Autor:** Adriano Marabuco  
-> **Atualizado em:** Outubro de 2025  
+> **Atualizado em:** Outubro de 2026  
 
 ---
 
 ## 🎯 Apresentação do Curso
 
 A Inteligência Artificial (IA) transformou profundamente a forma como servidores públicos lidam com informações, documentos, decisões e atendimento ao cidadão.  
-O **curso Engenharia de Prompt para Servidores Públicos** foi desenvolvido para **ensinar o uso ético, eficiente e estratégico da IA generativa** no contexto institucional.
+O **curso Inteligência Artificial no Serviço Público** foi desenvolvido para **ensinar o uso ético, eficiente e estratégico da IA generativa** no contexto institucional.
 
-💡 **Objetivo:** Capacitar servidores e gestores públicos a elaborar prompts (instruções para IA) que sejam:
+💡 **Objetivo:** Capacitar servidores e gestores públicos a usar a IA generativa, dos prompts (instruções para IA) ao contexto e aos fluxos com agentes, de forma que o trabalho seja:
 
 - **Claros e eficazes**, maximizando a qualidade das respostas.  
 - **Seguros e éticos**, em conformidade com a **Lei Geral de Proteção de Dados (LGPD)**.  
@@ -22,12 +22,11 @@ O **curso Engenharia de Prompt para Servidores Públicos** foi desenvolvido para
 
 O conteúdo é dividido em **módulos progressivos**. O aluno parte da compreensão básica, chega às técnicas de engenharia de prompt e vai além: **engenharia de contexto** e **fluxos de trabalho com agentes de IA**.
 
-1. Inteligência Artificial Generativa
-2. Privacidade e IA
-3. Prompts
-4. [Prática 1 — Engenharia de Prompt](praticas/pratica1_engenharia_de_prompt.md)
-5. [Prática 2 — Engenharia de Contexto e Fluxos com Agentes](praticas/pratica2_contexto_e_agentes.md)
-6. [Desafio Final (opcional, pós-curso)](praticas/desafio_final.md)
+1. Inteligência Artificial Generativa e LGPD
+2. Engenharia de Prompts e de Contexto
+3. [Prática 1 — Engenharia de Prompt](praticas/pratica1_engenharia_de_prompt.md)
+4. [Prática 2 — Engenharia de Contexto e Fluxos com Agentes](praticas/pratica2_contexto_e_agentes.md)
+5. [Desafio Final (opcional, pós-curso)](praticas/desafio_final.md)
 
 ➡️ Veja a [Trilha de Práticas](praticas/index.md) para entender como funcionam os encontros e as entregas.
 

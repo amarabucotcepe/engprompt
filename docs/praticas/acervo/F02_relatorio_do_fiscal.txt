@@ -1,0 +1,10 @@
+Curso Inteligência Artificial no Serviço Público · Prática 2 · DADOS FICTÍCIOS
+
+F2 — Relatório do fiscal do contrato (últimos 6 meses)
+
+% de OS atendidas em até 72 h:
+Jan 92% | Fev 91% | Mar 88% | Abr 74% | Mai 71% | Jun 79%
+
+Média do semestre: 82,5%. Houve glosa em abril, maio e junho.
+A empresa alega chuvas acima da média em abril e maio e atraso do fornecedor de massa asfáltica.
+O fiscal confirma as chuvas pelo boletim da Defesa Civil. Registra, porém, que em junho, sem chuvas relevantes, o índice ficou em 79%.
